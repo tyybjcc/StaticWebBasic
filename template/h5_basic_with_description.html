@@ -1,0 +1,77 @@
+<!doctype html>
+<!-- lang="ZH-cn" tell web spiders and browsers the web page is in Chinese language -->
+<!-- demo.appcache: With application cache it is easy to make an offline version of a web application, by creating a cache manifest file. -->
+<!-- http://www.w3schools.com/html/html5_app_cache.asp -->
+<html lang="ZH-cn" manifest="demo.appcache">
+  <head>
+  	<!-- the webpage is encoded by utf-8 and the language should decode the html file from utf-8 -->
+    <meta charset="utf-8">
+    <!-- deprecated or useless, control browser render mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- deprecated or useless, control offline cache -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    
+    <title>$pageTitle</title>
+    
+    <!-- Sets whether a web application runs in full-screen mode -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- important.Display method control, relative to font-size, scale control and so on-->
+	<meta  name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.8, maximum-scale=1.0,user-scalable=yes"/>
+    
+    <!-- web page description -->
+    <meta name="author" content="AllenTian">
+    <meta name="description" content="$pageDescription">
+    <meta name="keywords" content="keyword1,keyword2">
+    
+    <!-- whether call system telephone,email,map application for further info or not -->
+    <meta name="format-detection" content="telephone=no,email=no,address=no" />
+    
+    <!-- refresh(or reload) the web page per 30 seconds -->
+    <meta http-equiv="refresh" content="30">
+    <!-- set Html Header -> content-type parameter -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!-- set the web page icon -->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.png" type="image/png">
+	
+	<!-- Normalize.css makes browsers render all elements more consistently and in line with modern standards. 
+	It precisely targets only the styles that need normalizing -->
+	<!-- http://necolas.github.io/normalize.css/ -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" />
+	
+	<!-- describe the designer and programmer of the website -->
+	<link rel="author" href="humans.txt" />
+	
+	<!-- make low version suppert Html5 -->
+	<!--[if lt IE 9]>
+  	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	
+  	<link rel="stylesheet" type="text/css" href="css/styles.css?v=1.0">
+  	
+  	<!-- Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser. -->
+  	<!-- http://modernizr.com/ -->
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+  </head>
+  <body>
+  	<header></header>
+  	<nav></nav>
+  	<article></article>
+  	<aside></aside>
+  	<footer></footer>
+
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  	<!-- nice to have -->
+  	<!-- lets you use only unprefixed CSS properties everywhere. 
+  	It works behind the scenes, adding the current browser’s prefix to any CSS code, only when it’s needed. -->
+  	<!-- http://leaverou.github.io/prefixfree/ -->
+  	<!-- http://leaverou.github.io/animatable/# -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  	
+  	<script>
+	$(function(){
+	}); // END jQuery.ready
+	</script>
+  </body>
+</html>

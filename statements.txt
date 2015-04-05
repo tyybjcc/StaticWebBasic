@@ -1,0 +1,2 @@
+references:
+https://github.com/sinky/html5-template/blob/master/index.html
